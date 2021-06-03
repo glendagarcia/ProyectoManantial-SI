@@ -15,7 +15,7 @@ import javax.swing.ImageIcon;
  */
 public class ImagenBanner extends javax.swing.JPanel{
      public ImagenBanner() {
-          this.setSize(1930,70);
+          this.setSize(1367,70);
       }
     @Override
       public void paintComponent(Graphics g){
