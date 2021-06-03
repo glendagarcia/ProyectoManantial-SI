@@ -219,6 +219,12 @@ public class Sistema extends javax.swing.JFrame implements IClassModels {
         Button_Poductos = new javax.swing.JButton();
         Button_Cliente = new javax.swing.JButton();
         Button_Ventas = new javax.swing.JButton();
+        Button_Proveedor = new javax.swing.JButton();
+        jLabel43 = new javax.swing.JLabel();
+        Label_Usuario = new javax.swing.JLabel();
+        Label_Caja = new javax.swing.JLabel();
+        jLabel44 = new javax.swing.JLabel();
+        jScrollPane22 = new javax.swing.JScrollPane();
         jTabbedPane1 = new javax.swing.JTabbedPane();
         jPanel1 = new javax.swing.JPanel();
         jPanel17 = new javax.swing.JPanel();
@@ -755,11 +761,6 @@ public class Sistema extends javax.swing.JFrame implements IClassModels {
                 return false; //Disallow the editing of any cell
             }
         };
-        Button_Proveedor = new javax.swing.JButton();
-        jLabel43 = new javax.swing.JLabel();
-        Label_Usuario = new javax.swing.JLabel();
-        Label_Caja = new javax.swing.JLabel();
-        jLabel44 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Sistema punto de ventas");
@@ -853,6 +854,35 @@ public class Sistema extends javax.swing.JFrame implements IClassModels {
                 Button_VentasActionPerformed(evt);
             }
         });
+
+        Button_Proveedor.setBackground(new java.awt.Color(247, 101, 95));
+        Button_Proveedor.setForeground(new java.awt.Color(255, 255, 255));
+        Button_Proveedor.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/shipping.png"))); // NOI18N
+        Button_Proveedor.setToolTipText("");
+        Button_Proveedor.setBorder(null);
+        Button_Proveedor.setBorderPainted(false);
+        Button_Proveedor.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        Button_Proveedor.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Button_ProveedorActionPerformed(evt);
+            }
+        });
+
+        jLabel43.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        jLabel43.setForeground(new java.awt.Color(70, 106, 124));
+        jLabel43.setText("Bienvenido: ");
+
+        Label_Usuario.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        Label_Usuario.setForeground(new java.awt.Color(70, 106, 124));
+        Label_Usuario.setText("Usuario");
+
+        Label_Caja.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        Label_Caja.setForeground(new java.awt.Color(0, 204, 153));
+        Label_Caja.setText("0");
+
+        jLabel44.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        jLabel44.setForeground(new java.awt.Color(70, 106, 124));
+        jLabel44.setText("Caja  Nº ");
 
         jTabbedPane1.setBackground(new java.awt.Color(255, 255, 255));
         jTabbedPane1.setTabPlacement(javax.swing.JTabbedPane.BOTTOM);
@@ -6084,34 +6114,7 @@ public class Sistema extends javax.swing.JFrame implements IClassModels {
 
     jTabbedPane1.addTab("Reportes", jPanel65);
 
-    Button_Proveedor.setBackground(new java.awt.Color(247, 101, 95));
-    Button_Proveedor.setForeground(new java.awt.Color(255, 255, 255));
-    Button_Proveedor.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/shipping.png"))); // NOI18N
-    Button_Proveedor.setToolTipText("");
-    Button_Proveedor.setBorder(null);
-    Button_Proveedor.setBorderPainted(false);
-    Button_Proveedor.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-    Button_Proveedor.addActionListener(new java.awt.event.ActionListener() {
-        public void actionPerformed(java.awt.event.ActionEvent evt) {
-            Button_ProveedorActionPerformed(evt);
-        }
-    });
-
-    jLabel43.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-    jLabel43.setForeground(new java.awt.Color(70, 106, 124));
-    jLabel43.setText("Bienvenido: ");
-
-    Label_Usuario.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-    Label_Usuario.setForeground(new java.awt.Color(70, 106, 124));
-    Label_Usuario.setText("Usuario");
-
-    Label_Caja.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-    Label_Caja.setForeground(new java.awt.Color(0, 204, 153));
-    Label_Caja.setText("0");
-
-    jLabel44.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-    jLabel44.setForeground(new java.awt.Color(70, 106, 124));
-    jLabel44.setText("Caja  Nº ");
+    jScrollPane22.setViewportView(jTabbedPane1);
 
     javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
     getContentPane().setLayout(layout);
@@ -6119,10 +6122,9 @@ public class Sistema extends javax.swing.JFrame implements IClassModels {
         layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
         .addComponent(PanelBanner, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         .addGroup(layout.createSequentialGroup()
-            .addGap(12, 12, 12)
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(jTabbedPane1)
                 .addGroup(layout.createSequentialGroup()
+                    .addGap(12, 12, 12)
                     .addComponent(Button_Ventas, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                     .addComponent(Button_Cliente, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -6143,7 +6145,10 @@ public class Sistema extends javax.swing.JFrame implements IClassModels {
                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jLabel44)
                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                    .addComponent(Label_Caja)))
+                    .addComponent(Label_Caja))
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                    .addContainerGap()
+                    .addComponent(jScrollPane22)))
             .addContainerGap())
     );
     layout.setVerticalGroup(
@@ -6165,7 +6170,7 @@ public class Sistema extends javax.swing.JFrame implements IClassModels {
                 .addComponent(Label_Caja)
                 .addComponent(jLabel44))
             .addGap(35, 35, 35)
-            .addComponent(jTabbedPane1))
+            .addComponent(jScrollPane22, javax.swing.GroupLayout.DEFAULT_SIZE, 828, Short.MAX_VALUE))
     );
 
     pack();
@@ -8777,6 +8782,7 @@ public class Sistema extends javax.swing.JFrame implements IClassModels {
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane20;
     private javax.swing.JScrollPane jScrollPane21;
+    private javax.swing.JScrollPane jScrollPane22;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JScrollPane jScrollPane5;
