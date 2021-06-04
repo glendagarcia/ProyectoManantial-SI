@@ -15,12 +15,12 @@ import javax.swing.ImageIcon;
  */
 public class ImagenBanner extends javax.swing.JPanel{
      public ImagenBanner() {
-          this.setSize(1367,70);
+          this.setSize(1900,70);
       }
     @Override
       public void paintComponent(Graphics g){
         Dimension tam = getSize();
-        ImageIcon ImagenFondo = new ImageIcon(new ImageIcon(getClass().getResource("../Images/Banner.png")).getImage());
+        ImageIcon ImagenFondo = new ImageIcon(new ImageIcon(getClass().getResource("../Images/Banner1.png")).getImage());
         g.drawImage(ImagenFondo.getImage(), 0,0, tam.width, tam.height,null);
         setOpaque(false);
         super.paintComponents(g);
