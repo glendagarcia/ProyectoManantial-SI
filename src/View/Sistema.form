@@ -5783,11 +5783,10 @@
                                   <Component id="jTabbedPane3" max="32767" attributes="0"/>
                                   <Group type="102" alignment="0" attributes="0">
                                       <Component id="ButtonUser_Guardar" min="-2" pref="85" max="-2" attributes="0"/>
-                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
                                       <Component id="ButtonPd_Eliminar2" min="-2" pref="85" max="-2" attributes="0"/>
                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                       <Component id="Button_CancelarCompras1" min="-2" pref="85" max="-2" attributes="0"/>
-                                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                                   </Group>
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
@@ -7464,7 +7463,7 @@
                             <Component class="javax.swing.JButton" name="ButtonBodega_Excel">
                               <Properties>
                                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                                  <Color blue="99" green="66" red="0" type="rgb"/>
+                                  <Color blue="c3" green="d2" red="5f" type="rgb"/>
                                 </Property>
                                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                   <Font name="Century Gothic" size="14" style="1"/>
@@ -7482,7 +7481,7 @@
                             <Component class="javax.swing.JButton" name="ButtonBodega_PDF">
                               <Properties>
                                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                                  <Color blue="99" green="66" red="0" type="rgb"/>
+                                  <Color blue="c3" green="d2" red="5f" type="rgb"/>
                                 </Property>
                                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                   <Font name="Century Gothic" size="14" style="1"/>
@@ -7875,7 +7874,7 @@
                             <Component class="javax.swing.JButton" name="ButtonInvProducto_Excel">
                               <Properties>
                                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                                  <Color blue="99" green="66" red="0" type="rgb"/>
+                                  <Color blue="c3" green="d2" red="5f" type="rgb"/>
                                 </Property>
                                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                   <Font name="Century Gothic" size="14" style="1"/>
@@ -7893,7 +7892,7 @@
                             <Component class="javax.swing.JButton" name="ButtonInvProducto_PDF">
                               <Properties>
                                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                                  <Color blue="99" green="66" red="0" type="rgb"/>
+                                  <Color blue="c3" green="d2" red="5f" type="rgb"/>
                                 </Property>
                                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                                   <Font name="Dialog" size="14" style="1"/>

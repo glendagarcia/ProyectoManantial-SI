@@ -4353,11 +4353,10 @@ public class Sistema extends javax.swing.JFrame implements IClassModels {
                     .addComponent(jTabbedPane3)
                     .addGroup(jPanel41Layout.createSequentialGroup()
                         .addComponent(ButtonUser_Guardar, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGap(18, 18, 18)
                         .addComponent(ButtonPd_Eliminar2, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(Button_CancelarCompras1, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                        .addComponent(Button_CancelarCompras1, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
             .addGroup(jPanel41Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel41Layout.createSequentialGroup()
@@ -4994,7 +4993,7 @@ public class Sistema extends javax.swing.JFrame implements IClassModels {
     jLabel65.setForeground(new java.awt.Color(70, 106, 124));
     jLabel65.setText("Opciones para exportar");
 
-    ButtonBodega_Excel.setBackground(new java.awt.Color(0, 102, 153));
+    ButtonBodega_Excel.setBackground(new java.awt.Color(95, 210, 195));
     ButtonBodega_Excel.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
     ButtonBodega_Excel.setForeground(new java.awt.Color(255, 255, 255));
     ButtonBodega_Excel.setText("Excel");
@@ -5005,7 +5004,7 @@ public class Sistema extends javax.swing.JFrame implements IClassModels {
         }
     });
 
-    ButtonBodega_PDF.setBackground(new java.awt.Color(0, 102, 153));
+    ButtonBodega_PDF.setBackground(new java.awt.Color(95, 210, 195));
     ButtonBodega_PDF.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
     ButtonBodega_PDF.setForeground(new java.awt.Color(255, 255, 255));
     ButtonBodega_PDF.setText("PDF");
@@ -5253,7 +5252,7 @@ public class Sistema extends javax.swing.JFrame implements IClassModels {
     jLabel68.setForeground(new java.awt.Color(70, 106, 124));
     jLabel68.setText("Opciones para exportar");
 
-    ButtonInvProducto_Excel.setBackground(new java.awt.Color(0, 102, 153));
+    ButtonInvProducto_Excel.setBackground(new java.awt.Color(95, 210, 195));
     ButtonInvProducto_Excel.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
     ButtonInvProducto_Excel.setForeground(new java.awt.Color(255, 255, 255));
     ButtonInvProducto_Excel.setText("Excel");
@@ -5264,7 +5263,7 @@ public class Sistema extends javax.swing.JFrame implements IClassModels {
         }
     });
 
-    ButtonInvProducto_PDF.setBackground(new java.awt.Color(0, 102, 153));
+    ButtonInvProducto_PDF.setBackground(new java.awt.Color(95, 210, 195));
     ButtonInvProducto_PDF.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
     ButtonInvProducto_PDF.setForeground(new java.awt.Color(255, 255, 255));
     ButtonInvProducto_PDF.setText("PDF");
@@ -7626,27 +7625,6 @@ public class Sistema extends javax.swing.JFrame implements IClassModels {
         }
         restablecerVentas();
     }//GEN-LAST:event_Button_VentasActionPerformed
-
-    private void Button_BuscarProductoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button_BuscarProductoActionPerformed
-        if (TextFieldVT_BuscarProductos.getText().equals("")) {
-            Label_MensajeVenta.setText("Ingrese el código del producto ");
-            Label_MensajeVenta.setForeground(Color.RED);
-            TextFieldVT_BuscarProductos.requestFocus();
-        } else {
-            List<Bodega> bodega = venta.searchBodega(TextFieldVT_BuscarProductos.getText());
-            if (0 < bodega.size()) {
-
-                Label_MensajeVenta.setText("");
-                venta.saveVentasTempo(TextFieldVT_BuscarProductos.getText(), 0, cajaUser, idUsuario);
-                venta.searchVentatemp(Table_VentaTempo, num_registro, pageSize);
-                venta.importes(label_ImportesVentas, cajaUser, idUsuario);
-
-            } else {
-                Label_MensajeVenta.setText("El código del producto no existe ");
-                Label_MensajeVenta.setForeground(Color.RED);
-            }
-        }
-    }//GEN-LAST:event_Button_BuscarProductoActionPerformed
     private void restablecerVentas() {
         tab = 0;
         accion = "insert";
@@ -7672,19 +7650,6 @@ public class Sistema extends javax.swing.JFrame implements IClassModels {
         venta.reportesCliente(TableVT_Cliente, TextFieldVT_BuscarCliente.getText());
         new Paginador(tab, Table_VentaTempo, LabelVT_Paginas, 1);
     }
-    private void Table_VentaTempoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Table_VentaTempoMouseClicked
-        if (Table_VentaTempo.getSelectedRows().length > 0) {
-            if (evt.getClickCount() == 2) {
-                int filas = Table_VentaTempo.getSelectedRow();
-                String codigo = (String) venta.getModelo().getValueAt(filas, 1);
-                int cantidad = Integer.valueOf((String) venta.getModelo().getValueAt(filas, 4));
-                venta.deleteVenta(codigo, cantidad, cajaUser, idUsuario);
-                venta.searchVentatemp(Table_VentaTempo, num_registro, pageSize);
-                venta.importes(label_ImportesVentas, cajaUser, idUsuario);
-            }
-        }
-    }//GEN-LAST:event_Table_VentaTempoMouseClicked
-
     private void TextField_PagosKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_TextField_PagosKeyReleased
         venta.pagosCliente(TextField_Pagos, label_SuCambio, label_Cambio, label_Pago, CheckBox_Creditos);
     }//GEN-LAST:event_TextField_PagosKeyReleased
@@ -7730,11 +7695,11 @@ public class Sistema extends javax.swing.JFrame implements IClassModels {
     }//GEN-LAST:event_button_CobrarActionPerformed
 
     private void ButtonVT_PrimeroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonVT_PrimeroActionPerformed
-        new Paginador(tab, Table_VentaTempo, LabelVT_Paginas, 1).primero();
+        new Paginador(tab, TableInv_Productos, LabelVT_Paginas, 1).primero();
     }//GEN-LAST:event_ButtonVT_PrimeroActionPerformed
 
     private void ButtonVT_AnteriorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonVT_AnteriorActionPerformed
-        new Paginador(tab, Table_VentaTempo, LabelVT_Paginas, 0).anterior();
+        new Paginador(tab, TableInv_Productos, LabelVT_Paginas, 0).anterior();
     }//GEN-LAST:event_ButtonVT_AnteriorActionPerformed
 
     private void ButtonVT_SiguienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonVT_SiguienteActionPerformed
@@ -8350,6 +8315,40 @@ public class Sistema extends javax.swing.JFrame implements IClassModels {
             }
         }
     }//GEN-LAST:event_ButtonPd_Eliminar2ActionPerformed
+
+    private void Table_VentaTempoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Table_VentaTempoMouseClicked
+        if (Table_VentaTempo.getSelectedRows().length > 0) {
+            if (evt.getClickCount() == 2) {
+                int filas = Table_VentaTempo.getSelectedRow();
+                String codigo = (String) venta.getModelo().getValueAt(filas, 1);
+                int cantidad = Integer.valueOf((String) venta.getModelo().getValueAt(filas, 4));
+                venta.deleteVenta(codigo, cantidad, cajaUser, idUsuario);
+                venta.searchVentatemp(Table_VentaTempo, num_registro, pageSize);
+                venta.importes(label_ImportesVentas, cajaUser, idUsuario);
+            }
+        }
+    }//GEN-LAST:event_Table_VentaTempoMouseClicked
+
+    private void Button_BuscarProductoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button_BuscarProductoActionPerformed
+        if (TextFieldVT_BuscarProductos.getText().equals("")) {
+            Label_MensajeVenta.setText("Ingrese el código del producto ");
+            Label_MensajeVenta.setForeground(Color.RED);
+            TextFieldVT_BuscarProductos.requestFocus();
+        } else {
+            List<Bodega> bodega = venta.searchBodega(TextFieldVT_BuscarProductos.getText());
+            if (0 < bodega.size()) {
+
+                Label_MensajeVenta.setText("");
+                venta.saveVentasTempo(TextFieldVT_BuscarProductos.getText(), 0, cajaUser, idUsuario);
+                venta.searchVentatemp(Table_VentaTempo, num_registro, pageSize);
+                venta.importes(label_ImportesVentas, cajaUser, idUsuario);
+
+            } else {
+                Label_MensajeVenta.setText("El código del producto no existe ");
+                Label_MensajeVenta.setForeground(Color.RED);
+            }
+        }
+    }//GEN-LAST:event_Button_BuscarProductoActionPerformed
 
     // </editor-fold>
     /**

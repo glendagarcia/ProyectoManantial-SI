@@ -24,6 +24,7 @@ import javax.swing.JPanel;
 
 /**
  *
+ * JAVA.AWT.PRINT Paquete que contiene la libreria para imprimir
  * @author AlexJPZ
  */
 public class Imprimir extends Consult implements Printable {
