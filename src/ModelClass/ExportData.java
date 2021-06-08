@@ -107,14 +107,14 @@ public class ExportData extends javax.swing.JFrame {
                 document.open();
                 // Añadimos los metadatos del PDF
                 document.addKeywords("Java, PDF");
-                document.addAuthor("Código PDHN");
-                document.addCreator("Código PDHN");
+                document.addAuthor("Código Fer");
+                document.addCreator("Código Fer");
                 
                 // Primera página
                 Anchor anchor = new Anchor(pagina, categoryFont);
                 // El segundo parámetro es el número del capítulo.
                 Chapter catPart = new Chapter(new Paragraph(anchor), 1);
-                Paragraph subPara = new Paragraph("Realizado por PDHN", subcategoryFont);
+                Paragraph subPara = new Paragraph("Papelería Manantial", subcategoryFont);
                  Section subCatPart = catPart.addSection(subPara);
                  subCatPart.add(new Paragraph("Lista de productos"));
                  // Creamos la tabla

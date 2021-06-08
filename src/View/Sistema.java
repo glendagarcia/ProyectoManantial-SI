@@ -763,7 +763,7 @@ public class Sistema extends javax.swing.JFrame implements IClassModels {
         };
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Sistema punto de ventas");
+        setTitle("Papelería Manantial");
         addWindowListener(new java.awt.event.WindowAdapter() {
             public void windowClosing(java.awt.event.WindowEvent evt) {
                 formWindowClosing(evt);
