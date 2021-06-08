@@ -589,6 +589,8 @@ public class Sistema extends javax.swing.JFrame implements IClassModels {
         ButtonUser_Imagen = new javax.swing.JButton();
         ButtonUser_Guardar = new javax.swing.JButton();
         Button_CancelarCompras1 = new javax.swing.JButton();
+        ButtonPd_Eliminar1 = new javax.swing.JButton();
+        ButtonPd_Eliminar2 = new javax.swing.JButton();
         jPanel42 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         Table_Usuario =     Table_Usuario = new javax.swing.JTable(){
@@ -1027,7 +1029,7 @@ public class Sistema extends javax.swing.JFrame implements IClassModels {
                         .addComponent(ButtonVT_Siguiente, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(ButtonTV_Ultimo, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 583, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 603, Short.MAX_VALUE)
                         .addComponent(Button_ReciboVenta)))
                 .addGap(28, 28, 28))
             .addGroup(jPanel21Layout.createSequentialGroup()
@@ -1317,7 +1319,7 @@ public class Sistema extends javax.swing.JFrame implements IClassModels {
             .addGroup(jPanel26Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane10, javax.swing.GroupLayout.DEFAULT_SIZE, 996, Short.MAX_VALUE)
+                    .addComponent(jScrollPane10, javax.swing.GroupLayout.DEFAULT_SIZE, 1016, Short.MAX_VALUE)
                     .addGroup(jPanel26Layout.createSequentialGroup()
                         .addComponent(jLabel25)
                         .addGap(18, 18, 18)
@@ -1832,7 +1834,7 @@ public class Sistema extends javax.swing.JFrame implements IClassModels {
             .addGroup(jPanel8Layout.createSequentialGroup()
                 .addGap(302, 302, 302)
                 .addComponent(Label_PaginasClientes)
-                .addContainerGap(866, Short.MAX_VALUE))
+                .addContainerGap(886, Short.MAX_VALUE))
             .addGroup(jPanel8Layout.createSequentialGroup()
                 .addGap(90, 90, 90)
                 .addComponent(Button_PrimeroCLT, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -2180,7 +2182,7 @@ public class Sistema extends javax.swing.JFrame implements IClassModels {
             .addGroup(jPanel30Layout.createSequentialGroup()
                 .addGap(302, 302, 302)
                 .addComponent(LabelPd_Paginas)
-                .addContainerGap(814, Short.MAX_VALUE))
+                .addContainerGap(834, Short.MAX_VALUE))
             .addGroup(jPanel30Layout.createSequentialGroup()
                 .addGap(90, 90, 90)
                 .addComponent(ButtonPd_Primero, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -2835,7 +2837,7 @@ public class Sistema extends javax.swing.JFrame implements IClassModels {
                             .addGroup(jPanel13Layout.createSequentialGroup()
                                 .addGap(208, 208, 208)
                                 .addComponent(LabelPT_Paginas)))
-                        .addGap(0, 666, Short.MAX_VALUE)))
+                        .addGap(0, 686, Short.MAX_VALUE)))
                 .addContainerGap())
             .addGroup(jPanel13Layout.createSequentialGroup()
                 .addGap(327, 327, 327)
@@ -2924,7 +2926,7 @@ public class Sistema extends javax.swing.JFrame implements IClassModels {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jPanel13, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jPanel12, javax.swing.GroupLayout.DEFAULT_SIZE, 1224, Short.MAX_VALUE)))
+                            .addComponent(jPanel12, javax.swing.GroupLayout.DEFAULT_SIZE, 1244, Short.MAX_VALUE)))
                     .addComponent(jPanel14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
@@ -3204,7 +3206,7 @@ public class Sistema extends javax.swing.JFrame implements IClassModels {
                 .addComponent(jLabel23)
                 .addGap(18, 18, 18)
                 .addComponent(TextField_BuscarDpt, javax.swing.GroupLayout.PREFERRED_SIZE, 188, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(931, Short.MAX_VALUE))
+                .addContainerGap(951, Short.MAX_VALUE))
         );
         jPanel20Layout.setVerticalGroup(
             jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -3471,8 +3473,8 @@ public class Sistema extends javax.swing.JFrame implements IClassModels {
             }
         });
 
-        CheckBoxCP_Deuda.setBackground(new java.awt.Color(70, 106, 124));
-        CheckBoxCP_Deuda.setForeground(new java.awt.Color(70, 106, 124));
+        CheckBoxCP_Deuda.setBackground(new java.awt.Color(95, 210, 195));
+        CheckBoxCP_Deuda.setForeground(new java.awt.Color(255, 255, 255));
         CheckBoxCP_Deuda.setText("Credito");
         CheckBoxCP_Deuda.addChangeListener(new javax.swing.event.ChangeListener() {
             public void stateChanged(javax.swing.event.ChangeEvent evt) {
@@ -3744,7 +3746,7 @@ public class Sistema extends javax.swing.JFrame implements IClassModels {
                     .addGroup(jPanel18Layout.createSequentialGroup()
                         .addGap(302, 302, 302)
                         .addComponent(LabelCP_Paginas)))
-                .addContainerGap(676, Short.MAX_VALUE))
+                .addContainerGap(696, Short.MAX_VALUE))
             .addGroup(jPanel18Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jScrollPane9)
@@ -3806,7 +3808,7 @@ public class Sistema extends javax.swing.JFrame implements IClassModels {
                 .addComponent(jLabel45)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(LabelCP_Proveedor)
-                .addContainerGap(579, Short.MAX_VALUE))
+                .addContainerGap(599, Short.MAX_VALUE))
         );
         jPanel19Layout.setVerticalGroup(
             jPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -4043,7 +4045,7 @@ public class Sistema extends javax.swing.JFrame implements IClassModels {
                 .addComponent(Button_Inventario, javax.swing.GroupLayout.PREFERRED_SIZE, 243, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(47, 47, 47)
                 .addComponent(Button_Reportes, javax.swing.GroupLayout.PREFERRED_SIZE, 243, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 311, Short.MAX_VALUE))
+                .addGap(0, 331, Short.MAX_VALUE))
             .addGroup(jPanel27Layout.createSequentialGroup()
                 .addGap(176, 176, 176)
                 .addComponent(jLabel60)
@@ -4289,7 +4291,7 @@ public class Sistema extends javax.swing.JFrame implements IClassModels {
             .addGroup(jPanel44Layout.createSequentialGroup()
                 .addGap(41, 41, 41)
                 .addComponent(ButtonUser_Imagen, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(58, Short.MAX_VALUE))
+                .addContainerGap(78, Short.MAX_VALUE))
         );
         jPanel44Layout.setVerticalGroup(
             jPanel44Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -4324,20 +4326,44 @@ public class Sistema extends javax.swing.JFrame implements IClassModels {
             }
         });
 
+        ButtonPd_Eliminar1.setBackground(new java.awt.Color(247, 101, 95));
+        ButtonPd_Eliminar1.setForeground(new java.awt.Color(255, 255, 255));
+        ButtonPd_Eliminar1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/eliminar.png"))); // NOI18N
+        ButtonPd_Eliminar1.setBorder(null);
+        ButtonPd_Eliminar1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+
+        ButtonPd_Eliminar2.setBackground(new java.awt.Color(247, 101, 95));
+        ButtonPd_Eliminar2.setForeground(new java.awt.Color(255, 255, 255));
+        ButtonPd_Eliminar2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/eliminar.png"))); // NOI18N
+        ButtonPd_Eliminar2.setBorder(null);
+        ButtonPd_Eliminar2.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        ButtonPd_Eliminar2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ButtonPd_Eliminar2ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel41Layout = new javax.swing.GroupLayout(jPanel41);
         jPanel41.setLayout(jPanel41Layout);
         jPanel41Layout.setHorizontalGroup(
             jPanel41Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel41Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jTabbedPane3)
+                .addGroup(jPanel41Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jTabbedPane3)
+                    .addGroup(jPanel41Layout.createSequentialGroup()
+                        .addComponent(ButtonUser_Guardar, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(ButtonPd_Eliminar2, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(Button_CancelarCompras1, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
-            .addGroup(jPanel41Layout.createSequentialGroup()
-                .addGap(32, 32, 32)
-                .addComponent(ButtonUser_Guardar, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(Button_CancelarCompras1, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(38, 38, 38))
+            .addGroup(jPanel41Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel41Layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(ButtonPd_Eliminar1)
+                    .addGap(0, 0, Short.MAX_VALUE)))
         );
         jPanel41Layout.setVerticalGroup(
             jPanel41Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -4345,10 +4371,16 @@ public class Sistema extends javax.swing.JFrame implements IClassModels {
                 .addContainerGap()
                 .addComponent(jTabbedPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 389, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(jPanel41Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(ButtonUser_Guardar, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Button_CancelarCompras1, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(jPanel41Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(ButtonUser_Guardar, javax.swing.GroupLayout.DEFAULT_SIZE, 39, Short.MAX_VALUE)
+                    .addComponent(Button_CancelarCompras1, javax.swing.GroupLayout.DEFAULT_SIZE, 39, Short.MAX_VALUE)
+                    .addComponent(ButtonPd_Eliminar2, javax.swing.GroupLayout.DEFAULT_SIZE, 39, Short.MAX_VALUE))
                 .addContainerGap())
+            .addGroup(jPanel41Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel41Layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(ButtonPd_Eliminar1)
+                    .addGap(0, 0, Short.MAX_VALUE)))
         );
 
         jPanel42.setBackground(new java.awt.Color(255, 255, 255));
@@ -4449,7 +4481,7 @@ public class Sistema extends javax.swing.JFrame implements IClassModels {
             jPanel42Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel42Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jScrollPane1)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 636, Short.MAX_VALUE)
                 .addGroup(jPanel42Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel42Layout.createSequentialGroup()
                         .addGap(20, 20, 20)
@@ -4590,7 +4622,7 @@ public class Sistema extends javax.swing.JFrame implements IClassModels {
         jPanel53Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
         .addGroup(jPanel53Layout.createSequentialGroup()
             .addContainerGap()
-            .addComponent(jScrollPane14, javax.swing.GroupLayout.DEFAULT_SIZE, 1196, Short.MAX_VALUE)
+            .addComponent(jScrollPane14, javax.swing.GroupLayout.DEFAULT_SIZE, 1216, Short.MAX_VALUE)
             .addContainerGap())
     );
     jPanel53Layout.setVerticalGroup(
@@ -4637,7 +4669,7 @@ public class Sistema extends javax.swing.JFrame implements IClassModels {
         jPanel54Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
         .addGroup(jPanel54Layout.createSequentialGroup()
             .addContainerGap()
-            .addComponent(jScrollPane15, javax.swing.GroupLayout.DEFAULT_SIZE, 1196, Short.MAX_VALUE)
+            .addComponent(jScrollPane15, javax.swing.GroupLayout.DEFAULT_SIZE, 1216, Short.MAX_VALUE)
             .addContainerGap())
     );
     jPanel54Layout.setVerticalGroup(
@@ -5116,7 +5148,7 @@ public class Sistema extends javax.swing.JFrame implements IClassModels {
         jPanel58Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
         .addGroup(jPanel58Layout.createSequentialGroup()
             .addContainerGap()
-            .addComponent(jScrollPane16, javax.swing.GroupLayout.DEFAULT_SIZE, 1077, Short.MAX_VALUE)
+            .addComponent(jScrollPane16, javax.swing.GroupLayout.DEFAULT_SIZE, 1097, Short.MAX_VALUE)
             .addContainerGap())
         .addGroup(jPanel58Layout.createSequentialGroup()
             .addGap(275, 275, 275)
@@ -5385,7 +5417,7 @@ public class Sistema extends javax.swing.JFrame implements IClassModels {
         jPanel61Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
         .addGroup(jPanel61Layout.createSequentialGroup()
             .addContainerGap()
-            .addComponent(jScrollPane17, javax.swing.GroupLayout.DEFAULT_SIZE, 1079, Short.MAX_VALUE)
+            .addComponent(jScrollPane17, javax.swing.GroupLayout.DEFAULT_SIZE, 1099, Short.MAX_VALUE)
             .addContainerGap())
         .addGroup(jPanel61Layout.createSequentialGroup()
             .addGap(275, 275, 275)
@@ -5508,7 +5540,7 @@ public class Sistema extends javax.swing.JFrame implements IClassModels {
         jPanel63Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
         .addGroup(jPanel63Layout.createSequentialGroup()
             .addContainerGap()
-            .addComponent(jScrollPane18, javax.swing.GroupLayout.DEFAULT_SIZE, 1079, Short.MAX_VALUE)
+            .addComponent(jScrollPane18, javax.swing.GroupLayout.DEFAULT_SIZE, 1099, Short.MAX_VALUE)
             .addContainerGap())
         .addGroup(jPanel63Layout.createSequentialGroup()
             .addGap(275, 275, 275)
@@ -6019,7 +6051,7 @@ public class Sistema extends javax.swing.JFrame implements IClassModels {
         jPanel72Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
         .addGroup(jPanel72Layout.createSequentialGroup()
             .addContainerGap()
-            .addComponent(jScrollPane21, javax.swing.GroupLayout.DEFAULT_SIZE, 633, Short.MAX_VALUE)
+            .addComponent(jScrollPane21, javax.swing.GroupLayout.DEFAULT_SIZE, 653, Short.MAX_VALUE)
             .addContainerGap())
         .addGroup(jPanel72Layout.createSequentialGroup()
             .addGap(218, 218, 218)
@@ -8305,6 +8337,20 @@ public class Sistema extends javax.swing.JFrame implements IClassModels {
         // TODO add your handling code here:
     }//GEN-LAST:event_TableReport_produtoBodegaKeyReleased
 
+    private void ButtonPd_Eliminar2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonPd_Eliminar2ActionPerformed
+        if (idUsuario == 0) {
+            JOptionPane.showMessageDialog(null, "Seleccione un usuario para eliminar");
+        } else {
+            if (JOptionPane.YES_NO_OPTION == JOptionPane.showConfirmDialog(null,
+                    "Desea eliminar los registros " + "'", "Eliminar registros ",
+                    JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE)) {
+                objectUsusrios.deleteUsuario(idUsuario);
+
+                objectUsusrios.restablecerUsuarios();
+            }
+        }
+    }//GEN-LAST:event_ButtonPd_Eliminar2ActionPerformed
+
     // </editor-fold>
     /**
      * @param args the command line arguments
@@ -8380,6 +8426,8 @@ public class Sistema extends javax.swing.JFrame implements IClassModels {
     private javax.swing.JButton ButtonPd_Anterior;
     private javax.swing.JButton ButtonPd_Cancelar;
     private javax.swing.JButton ButtonPd_Eliminar;
+    private javax.swing.JButton ButtonPd_Eliminar1;
+    private javax.swing.JButton ButtonPd_Eliminar2;
     private javax.swing.JButton ButtonPd_Factura;
     private javax.swing.JButton ButtonPd_Primero;
     private javax.swing.JButton ButtonPd_Siguiente;

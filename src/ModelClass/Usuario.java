@@ -434,4 +434,10 @@ public class Usuario extends Consult implements IUploadimage {
     public List<Usuarios> getUsuarios(){
         return usuarios();
     }
+    
+     public void deleteUsuario(int idUsuario) {
+        sql = "DELETE FROM usuarios WHERE idUsuario LIKE ?";
+        delete(sql, idUsuario);
+     
+    }
 }
